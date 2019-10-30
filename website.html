@@ -57,6 +57,35 @@
   <![endif]-->
 </head>
 <body>
+  <header class="main-header" id="main-header">
+    <nav>
+      <a href="/" route_to="/">Inicio</a>
+      <a href="/" route_to="/servicios">Servicios</a>
+      <a href="/" route_to="/acerca">Acerca de</a>
+    </nav>
+  </header>
+
+  <main class="main-content" id="main-content"></main>
+
+
+  <!-- Componente pantalla principal -->
+  <template component route="/">
+    <section class="banner">
+      <img src="./img/banner.png" alt="Banner" class="banner--img">
+    </section>
+  </template>
+
+  <!-- componente pantalla de servicios -->
+  <template component route="/servicios">
+    <h1>Servicios Section</h1>
+  </template>
+
+  <!-- componente pantalla de acerca -->
+  <template component route="/acerca">
+    <h1>Acerca Section</h1>
+  </template>
+
+  <script src="./js/utils.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
