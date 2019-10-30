@@ -119,7 +119,7 @@ window.history.setURI = function(URL='/'){
 
 // adding new property to get all cookies storaged
 window.getPathCookies = function(){
-  let cookies = { path: '/' };
+  let cookies = { websitepath: '/' };
 
   if(document.cookie){
     cookies = document.cookie
